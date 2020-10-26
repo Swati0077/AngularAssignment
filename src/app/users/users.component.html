@@ -1,0 +1,31 @@
+
+<button class="btn btn-primary" (click)="onRefresh()">REFRESH</button>
+
+<table class="table table-bordered table-responsive-md table-striped text-center">
+    <tr>
+    <th class="text-center" >First Name</th>
+    <th class="text-center">Middle Name</th>
+    <th class="text-center">Last Name</th>
+    <th class="text-center"> Email</th>
+    <th class="text-center">Phone Number</th>
+    <th class="text-center">Role</th>
+    <th class="text-center">Address</th>
+    <th class="text-center">Created On</th>
+    <th class="text-center"> Modified On</th>
+    <th class="text-center" colspan="4">Edit</th>
+    </tr>
+
+    <tr *ngFor="let userdata of user; let i=index ;" class="hover-highlight">
+        <td>{{userdata.firstname}}</td>
+        <td>{{userdata.middlename}}</td>
+        <td>{{userdata.lastname}}</td>
+        <td>{{userdata.email}}</td>
+        <td>{{userdata.phonenumber}}</td>
+        <td>{{userdata.role}}</td>
+        <td>{{userdata.address}}</td>
+        <td>{{userdata.created_on}}</td>
+        <td>{{userdata.modified_on}}</td>
+        <td><button class="btn btn-primary" (click)="updateRow(userdata.id)">Edit</button></td>
+        <td><button class="btn btn-primary" (click)="deleteRow(userdata.id)">Delete</button></td> 
+    </tr>
+</table>
