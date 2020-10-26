@@ -1,0 +1,31 @@
+<div class="container">
+
+    <h1 style="text-align: center;">Update Data</h1>
+    <br><br>
+
+
+    <label for="firstname"><strong>Firstname</strong></label>
+    <input type="text" placeholder="firstname" [(ngModel)]="firstname" class="form-control"><br>
+
+    <label for="middlename"><strong>Middlename</strong></label>
+    <input type="text" placeholder="Middlename" [(ngModel)]="middlename" class="form-control"><br>
+
+    <label for="lastname"><strong>Lastname</strong></label>
+    <input type="text" placeholder="Lastname" [(ngModel)]="lastname" class="form-control"><br>
+
+    <label for="email"><strong>Email</strong></label>
+    <input type="email" placeholder="Email" [(ngModel)]="email" class="form-control"><br>
+
+    <label for="phonenumber"><strong>Phone Number</strong></label>
+    <input type="text" placeholder="Phone number" [(ngModel)]="phonenumber" class="form-control"><br>
+  
+    <label for="role"><strong>Role</strong></label>
+    <input type="text" placeholder="role" [(ngModel)]="role" class="form-control"><br>
+
+    <label for="address"><strong>Address</strong></label>
+    <input type="text" placeholder="address" [(ngModel)]="address" class="form-control"><br>
+
+    <button type="submit" class="btn btn-primary" (click)="updateUser()" >Save</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-primary" (click)="onCancel()">Cancel</button>
+
+</div>
